@@ -1,11 +1,11 @@
 import Link from "next/link";
+import MenuBtn from "./Components/Buttons/MenuBtn";
+import HomeNav from "./Components/HomeNav";
 
 export default async function Home() {
   return (
-    <div>
-      <Link className="bg-red-100" href="/gallery">
-        This is Home, go to Gallery
-      </Link>
+    <div className="w-lvw h-lvh flex flex-col items-center m-auto">
+      <HomeNav />
     </div>
   );
 }
