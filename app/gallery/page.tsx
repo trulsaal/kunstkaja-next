@@ -5,7 +5,7 @@ export default async function Gallery() {
   const imageCards = await getImageCards();
 
   return (
-    <div className="flex bg-green-200">
+    <div className="grid grid-cols-3 bg-gray-300 gap-20 items-center px-44 w-lvw">
       {imageCards.map((imageCard) => (
         <div key={imageCard._id}>
           {imageCard.image && (
