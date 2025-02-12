@@ -19,12 +19,12 @@ export default async function ImageCard({
 }: Props) {
   return (
     <div>
-      <div className="p-5 outline flex flex-col items-center gap-4">
+      <div className="h-[650px] p-5 outline flex flex-col items-center gap-4 max-w-96 rounded-sm">
         <Image
           src={image}
           alt={alt}
-          width={300}
-          height={400}
+          width={500}
+          height={500}
           className="outline outline-black rounded-sm"
         />
         <span className="font-bold text-2xl">{name}</span>
