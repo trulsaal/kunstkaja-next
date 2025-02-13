@@ -1,5 +1,3 @@
-import Link from "next/link";
-import MenuBtn from "./Components/Buttons/MenuBtn";
 import HomeNav from "./Components/HomeNav";
 
 export default async function Home() {
