@@ -1,5 +1,6 @@
 import { Project } from "@/types/Projects";
 import { ImageCard } from "@/types/ImageCards";
+import { AboutInfo } from "@/types/AboutInfo";
 import { createClient, groq } from "next-sanity";
 
 export async function getProjects(): Promise<Project[]> {
@@ -28,6 +29,7 @@ export async function getImageCards(): Promise<ImageCard[]> {
     dataset: "production",
     apiVersion: "2025-10-02",
   });
+
   return client.fetch(
     groq`*[_type == "imagecard"]{
     _id,
@@ -39,5 +41,23 @@ export async function getImageCards(): Promise<ImageCard[]> {
     price,
     text
     }`
+  );
+}
+
+export async function getAboutInfo(): Promise<AboutInfo[]> {
+  const client = createClient({
+    projectId: "j1glnfyu",
+    dataset: "production",
+    apiVersion: "2025-13-02",
+  });
+
+  return client.fetch(
+    qroq`*[_type =="infoaboutpage"]{
+    _id,
+    _createdAt,
+    header,
+    "slug":slug.current,
+    "image": image.asset->url,
+    infotext}`
   );
 }
