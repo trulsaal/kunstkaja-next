@@ -9,10 +9,10 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <div className=" px-10 flex flex-col">
-        <div className="flex">
+        <div className=" flex">
           <Header />
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row ">
           <Sidebar />
           <div className="flex justify-center w-full">
             <div className="">{children}</div>
