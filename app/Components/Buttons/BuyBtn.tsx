@@ -1,12 +1,16 @@
 import Link from "next/link";
 
-export default function BuyBtn() {
+interface Props {
+  label: string;
+}
+
+export default function BuyBtn({ label }: Props) {
   return (
     <Link
-      className="rounded-full bg-pink-300 w-full text-center py-2 hover:bg-pink-100 duration-150 transition-all font-semibold"
+      className="rounded-lg shadow-sm w-64 text-center py-3 hover:bg-slate-400 duration-150 transition-all font-semibold"
       href="/"
     >
-      Bestill
+      {label}
     </Link>
   );
 }
