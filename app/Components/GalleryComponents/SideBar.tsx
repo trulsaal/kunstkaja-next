@@ -1,12 +1,12 @@
-import MenuBtn from "../Buttons/MenuBtn";
+import SidebarBtn from "../Buttons/SidebarBtn";
 
 export default function Sidebar() {
   return (
-    <div className="w-28 h-lvh outline flex flex-col items-center gap-1 py-10">
-      <MenuBtn to="/">til salgs</MenuBtn>
-      <MenuBtn to="/">portefølje</MenuBtn>
-      <MenuBtn to="/">om</MenuBtn>
-      <MenuBtn to="/">hjem</MenuBtn>
+    <div className="w-72 h-fit fixed grid grid-col gap-1 text-left">
+      <SidebarBtn to="/">til salgs</SidebarBtn>
+      <SidebarBtn to="/">portefølje</SidebarBtn>
+      <SidebarBtn to="/about">om</SidebarBtn>
+      <SidebarBtn to="/">hjem</SidebarBtn>
     </div>
   );
 }
