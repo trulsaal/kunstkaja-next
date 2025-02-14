@@ -14,10 +14,7 @@ export default async function About() {
               <h1 className="font-medium tracking-tight text-5xl text-slate-700 w-full">
                 {info.header}
               </h1>
-              <PortableText
-                value={info.content}
-                className="font-medium -tracking-tightest text-slate-700"
-              ></PortableText>
+              <PortableText value={info.content}></PortableText>
               <button className=" bg-slate-800 w-fit py-3 px-10 text-white rounded-full font-semibold hover:bg-white hover:text-slate-800 hover:shadow-lg">
                 Kontakt meg
               </button>
