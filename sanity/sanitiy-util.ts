@@ -8,6 +8,7 @@ export async function getProjects(): Promise<Project[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
+    useCdn: true,
   });
 
   return client.fetch(
@@ -28,6 +29,7 @@ export async function getImageCards(): Promise<ImageCard[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
+    useCdn: true,
   });
 
   return client.fetch(
@@ -49,6 +51,7 @@ export async function getAboutInfo(): Promise<AboutInfo[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
+    useCdn: true,
   });
 
   return client.fetch(
