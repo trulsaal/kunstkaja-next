@@ -5,10 +5,12 @@ const AboutInfo = {
   fields: [
     { name: "header", title: "Overskrift", type: "string" },
     {
-      name: "infotext",
-      title: "Tekstinnhold (kunstkaja er ...)",
-      type: "string",
+      name: "content",
+      title: "Content",
+      type: "array",
+      of: [{ type: "block" }],
     },
+
     {
       name: "slug",
       title: "Slug (bare trykk Generate)",
