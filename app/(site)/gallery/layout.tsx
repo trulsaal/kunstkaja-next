@@ -3,7 +3,7 @@ import Header from "../../Components/GalleryComponents/Header";
 import Sidebar from "../../Components/GalleryComponents/SideBar";
 
 interface Props {
-  children: any;
+  children: React.ReactNode;
 }
 const Layout = ({ children }: Props) => {
   return (
