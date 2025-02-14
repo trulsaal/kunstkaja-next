@@ -48,16 +48,16 @@ export async function getAboutInfo(): Promise<AboutInfo[]> {
   const client = createClient({
     projectId: "j1glnfyu",
     dataset: "production",
-    apiVersion: "2025-13-02",
+    apiVersion: "2025-10-02",
   });
 
   return client.fetch(
-    qroq`*[_type =="infoaboutpage"]{
+    groq`*[_type == "infoaboutpage"]{
     _id,
     _createdAt,
     header,
     "slug":slug.current,
     "image": image.asset->url,
-    infotext}`
+    content}`
   );
 }
