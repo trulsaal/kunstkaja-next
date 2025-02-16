@@ -13,7 +13,7 @@ export default async function About() {
           <div className=" grid grid-cols-[50%,50%]">
             <div className="flex flex-col items-center px-10 gap-10">
               <h1 className="font-medium tracking-tight text-5xl text-slate-700 w-full">
-                {info.header}
+                {info.name}
               </h1>
               <PortableText value={info.content}></PortableText>
               <button className=" bg-slate-800 w-fit py-3 px-10 text-white rounded-full font-semibold hover:bg-white hover:text-slate-800 hover:shadow-lg">
