@@ -8,7 +8,7 @@ export async function getProjects(): Promise<Project[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
-    useCdn: true,
+    useCdn: false,
   });
 
   return client.fetch(
@@ -29,7 +29,7 @@ export async function getImageCards(): Promise<ImageCard[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
-    useCdn: true,
+    useCdn: false,
   });
 
   return client.fetch(
@@ -51,14 +51,14 @@ export async function getAboutInfo(): Promise<AboutInfo[]> {
     projectId: "j1glnfyu",
     dataset: "production",
     apiVersion: "2025-10-02",
-    useCdn: true,
+    useCdn: false,
   });
 
   return client.fetch(
     groq`*[_type == "infoaboutpage"]{
     _id,
     _createdAt,
-    header,
+    name,
     "slug":slug.current,
     "image": image.asset->url,
     content}`

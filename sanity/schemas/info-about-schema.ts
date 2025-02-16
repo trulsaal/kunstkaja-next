@@ -3,7 +3,7 @@ const AboutInfo = {
   title: "Informasjon om kunstKaja",
   type: "document",
   fields: [
-    { name: "header", title: "Overskrift", type: "string" },
+    { name: "name", title: "Overskrift", type: "string" },
     {
       name: "content",
       title: "Content",
@@ -15,7 +15,7 @@ const AboutInfo = {
       name: "slug",
       title: "Slug",
       type: "slug",
-      options: { source: "header" },
+      options: { source: "name" },
     },
     {
       name: "image",
