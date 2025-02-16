@@ -13,9 +13,9 @@ const AboutInfo = {
 
     {
       name: "slug",
-      title: "Slug (bare trykk Generate)",
+      title: "Slug",
       type: "slug",
-      options: { source: "name" },
+      options: { source: "header" },
     },
     {
       name: "image",
