@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { getImageCards } from "@/sanity/sanitiy-util";
 import ImageCard from "../../Components/GalleryComponents/ImageCard";
 

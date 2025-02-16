@@ -1,3 +1,4 @@
+export const revalidate = 0;
 import { getAboutInfo } from "@/sanity/sanitiy-util";
 import { PortableText } from "next-sanity";
 import Image from "next/image";

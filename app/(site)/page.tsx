@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import HomeNav from "../Components/HomeNav";
 
 export default async function Home() {
