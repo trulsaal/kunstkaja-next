@@ -8,7 +8,7 @@ export default async function Gallery() {
 
   return (
     <div className="flex justify-center items-center ">
-      <div className="gap-56 grid grid-cols-2">
+      <div className="gap-10 md:gap-56 grid md:grid-cols-2">
         {imageCards.map((imageCard) => (
           <div key={imageCard._id}>
             {imageCard.image && (
