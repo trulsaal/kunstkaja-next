@@ -1,4 +1,8 @@
+import { FaInstagram } from "react-icons/fa";
 import MenuBtn from "./Buttons/MenuBtn";
+
+import { FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 export default function HomeNav() {
   return (
@@ -12,7 +16,13 @@ export default function HomeNav() {
         <MenuBtn to="/about">om</MenuBtn>
         <MenuBtn to="">kontakt</MenuBtn>
       </div>
-      <div className="md:mt-auto md:mb-24">Icons</div>
+      <div className="flex gap-2 text-3xl md:mt-auto ">
+        <Link href="">
+          <FaInstagram className="hover:scale-150 transform transition-all duration-300 cursor-pointer"></FaInstagram>
+        </Link>
+
+        <FaEnvelope className="hover:scale-150 transform transition-all duration-300 cursor-pointer"></FaEnvelope>
+      </div>
     </div>
   );
 }
