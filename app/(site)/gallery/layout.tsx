@@ -9,14 +9,13 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <div className="px-10 py-10 md:py-0 flex flex-col">
+      <div className="md:px-10 py-10 md:py-0 flex flex-col">
         <div className="flex"></div>
-
         <Header />
       </div>
-      <div className="mx-10 flex md:flex-row">
+      <div className="md:mx-10 flex md:flex-row">
         <Sidebar />
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center md:w-full">
           <div className="">{children}</div>
         </div>
       </div>

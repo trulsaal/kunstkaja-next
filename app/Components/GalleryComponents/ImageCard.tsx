@@ -18,15 +18,15 @@ export default async function ImageCard({
   price,
 }: Props) {
   return (
-    <div>
-      <div className="px-10 md:p-5 flex flex-col items-center gap-4  rounded-sm w-[450px] h-svh md:h-full">
+    <div className="">
+      <div className="px-12 md:p-5 flex flex-col items-center gap-4 md:w-[450px] h-svh md:h-full ">
         <div className="">
           <Image
             src={image}
             alt={alt}
             width={500}
             height={1200}
-            className="object-cover rounded-sm aspect-[1/1.414]"
+            className="object-cover rounded-lg aspect-[1/1.414]"
           />
         </div>
         <div className="flex flex-col gap-2 leading-tight w-full items-center text-center ">

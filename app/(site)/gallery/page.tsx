@@ -7,7 +7,7 @@ export default async function Gallery() {
   const imageCards = await getImageCards();
 
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center">
       <div className="gap-10 md:gap-56 grid md:grid-cols-2">
         {imageCards.map((imageCard) => (
           <div key={imageCard._id}>
