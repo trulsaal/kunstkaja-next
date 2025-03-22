@@ -9,7 +9,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div className="dark:bg-gray-800">
-      <div className="md:px-10 py-10 md:py-0 flex flex-col">
+      <div className=" py-10 md:py-0 flex flex-col">
         <div className="flex"></div>
         <Header />
       </div>
