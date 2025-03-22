@@ -2,6 +2,7 @@
 import { useState } from "react";
 import ThemeSwitch from "../ThemeSwitch";
 import HeaderIcon from "./HeaderIcon";
+import Link from "next/link";
 
 export default function Header() {
   const [isHovering, setIsHovering] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
 
   return (
     <div className="md:pr-10 justify-between hidden md:h-28 md:flex items-center">
-      <a
+      <Link
         href="/"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -31,7 +32,7 @@ export default function Header() {
             <strong>kunst</strong>Kaja
           </div>
         )}
-      </a>
+      </Link>
       <ThemeSwitch />
     </div>
   );

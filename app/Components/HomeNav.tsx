@@ -1,10 +1,6 @@
-import { FaInstagram } from "react-icons/fa";
 import MenuBtn from "./Buttons/MenuBtn";
 
-import { FaEnvelope } from "react-icons/fa";
-import Link from "next/link";
 import SoMeIcons from "./SoMeIcons";
-import ThemeSwitch from "./ThemeSwitch";
 
 export default function HomeNav() {
   return (
