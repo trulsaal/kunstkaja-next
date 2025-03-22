@@ -3,6 +3,8 @@ import MenuBtn from "./Buttons/MenuBtn";
 
 import { FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
+import SoMeIcons from "./SoMeIcons";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function HomeNav() {
   return (
@@ -16,13 +18,7 @@ export default function HomeNav() {
         <MenuBtn to="/about">om</MenuBtn>
         <MenuBtn to="">kontakt</MenuBtn>
       </div>
-      <div className="dark:text-slate-100 text-slate-700 flex gap-2 text-3xl md:mt-auto ">
-        <Link href="">
-          <FaInstagram className="hover:scale-150 transform transition-all duration-300 cursor-pointer"></FaInstagram>
-        </Link>
-
-        <FaEnvelope className="hover:scale-150 transform transition-all duration-300 cursor-pointer"></FaEnvelope>
-      </div>
+      <SoMeIcons />
     </div>
   );
 }

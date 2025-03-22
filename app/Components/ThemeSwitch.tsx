@@ -34,7 +34,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "light") {
     return (
       <FiMoon
-        className="hover:cursor-pointer hover:opacity-50 text-3xl font-light"
+        className="hover:cursor-pointer hover:opacity-50 text-slate-700 text-3xl font-light"
         onClick={() => setTheme("dark")}
       />
     );

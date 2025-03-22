@@ -1,4 +1,5 @@
 import SidebarBtn from "../Buttons/SidebarBtn";
+import SoMeIcons from "../SoMeIcons";
 
 export default function Sidebar() {
   return (
@@ -6,7 +7,9 @@ export default function Sidebar() {
       <SidebarBtn to="/gallery">til salgs</SidebarBtn>
       <SidebarBtn to="/portfolio">portefølje</SidebarBtn>
       <SidebarBtn to="/about">om</SidebarBtn>
-      <SidebarBtn to="/">hjem</SidebarBtn>
+      <div className="mt-64">
+        <SoMeIcons />
+      </div>
     </div>
   );
 }
