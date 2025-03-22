@@ -11,7 +11,7 @@ export default function SidebarBtn({ to, children }: Props) {
   return (
     <Link
       href={to}
-      className="min-w-36 bg-none text-slate-800 text-lg font-normal leading-1 hover:font-light hover:opacity-55 transition-all duration-100 h-fit"
+      className="min-w-36 bg-none text-lg font-normal leading-1 hover:font-light hover:opacity-55 transition-all duration-100 h-fit"
     >
       {children}
     </Link>

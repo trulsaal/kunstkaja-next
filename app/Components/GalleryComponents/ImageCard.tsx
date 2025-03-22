@@ -19,25 +19,25 @@ export default async function ImageCard({
 }: Props) {
   return (
     <div className="">
-      <div className="px-12 md:p-5 flex flex-col items-center gap-4 md:w-[450px] h-svh md:h-full ">
+      <div className="px-12 md:p-0 flex flex-col items-center md:w-[450px] h-svh md:h-full gap-4">
         <div className="">
           <Image
             src={image}
             alt={alt}
             width={500}
             height={1200}
-            className="object-cover rounded-lg aspect-[1/1.414]"
+            className="object-cover aspect-[1/1.414]"
           />
         </div>
-        <div className="flex flex-col gap-2 leading-tight w-full items-center text-center ">
-          <div className="flex flex-col">
-            <span className="font-medium leading-none text-normal mb-2">
-              {name.toUpperCase()}
+        <div className="flex flex-col gap-4 leading-tight w-full md:items-start items-center md:text-left text-center dark:text-slate-100">
+          <div className="gap-2 flex flex-col">
+            <span className="font-medium leading-none md:text-lg text-normal">
+              {name}
             </span>
             <span className="text-sm  leading-none font-medium">{text}</span>
           </div>
 
-          <BuyBtn label={price + " ,-"} />
+          <BuyBtn label={"NOK " + price} />
         </div>
       </div>
     </div>
