@@ -1,7 +1,6 @@
 export const revalidate = 0;
 
 import HomeNav from "../Components/HomeNav";
-import ThemeSwitch from "../Components/ThemeSwitch";
 
 export default async function Home() {
   return (

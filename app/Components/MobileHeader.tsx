@@ -8,7 +8,7 @@ export default function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
-    isOpen ? setIsOpen(false) : setIsOpen(true);
+    setIsOpen(!isOpen);
   }
 
   return (
