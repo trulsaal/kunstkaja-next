@@ -11,7 +11,7 @@ export default function MobileHeader() {
   }
 
   return (
-    <div className="md:hidden dark:bg-slate-800 relative h-24 align-middle bg-transparent flex flex-col ">
+    <div className="md:hidden dark:bg-slate-700 fixed top-0 h-20 w-full align-middle bg-transparent">
       <div className="z-10 flex p-4 items-center justify-between">
         <h1 className="text-4xl">
           <strong>kunst</strong>Kaja
@@ -21,7 +21,7 @@ export default function MobileHeader() {
         </div>
       </div>
 
-      <div className="">
+      <div className="right-0 -z-10 absolute ">
         {isOpen ? (
           <div className="absolute mt-auto -translate-y-64 overflow-hidden">
             <DropDownMenu>

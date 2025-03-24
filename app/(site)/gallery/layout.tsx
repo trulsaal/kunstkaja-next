@@ -12,7 +12,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div className="dark:bg-gray-800">
-      <div className="md:py-0 flex flex-col">
+      <div className="md:py-0 mb-32 flex flex-col">
         <Header />
         <MobileHeader />
       </div>
