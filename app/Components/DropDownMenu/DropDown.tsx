@@ -1,7 +1,11 @@
-"use client";
-
 import React from "react";
-
-export default function DropDownMenu() {
-  return <div>DropDown</div>;
+interface Props {
+  children: React.ReactNode;
+}
+export default function DropDownMenu({ children }: Props) {
+  return (
+    <div className="bg-white dark:bg-slate-800 h-fit flex items-center justify-end">
+      {children}
+    </div>
+  );
 }
