@@ -3,7 +3,7 @@ import { FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export default function SoMeIcons() {
   return (
-    <div className="dark:text-slate-100 text-slate-700 flex gap-2 text-3xl md:mt-auto ">
+    <div className="dark:text-slate-100 text-slate-700 flex gap-2 text-3xl  ">
       <Link href="https://www.instagram.com/kunstkaja/">
         <FaInstagram className="hover:scale-150 transform transition-all duration-300 cursor-pointer" />
       </Link>

@@ -12,7 +12,7 @@ export default function MobileHeader() {
   }
 
   return (
-    <div className="md:hidden dark:bg-slate-700 fixed top-0 h-20 w-full align-middle bg-transparent">
+    <div className="md:hidden dark:bg-slate-700 fixed top-0 h-20 w-full align-middle bg-white">
       <div className="z-10 flex p-4 items-center justify-between">
         <Link href="/">
           <h1 className="text-4xl">
