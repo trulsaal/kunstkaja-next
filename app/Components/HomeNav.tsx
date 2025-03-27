@@ -4,7 +4,7 @@ import SoMeIcons from "./SoMeIcons";
 
 export default function HomeNav() {
   return (
-    <div className=" w-96 md:w-[800px] flex flex-col m-auto items-center justify-center  md:h-3/4 ">
+    <div className=" w-96 h-[44rem] md:w-[800px] flex flex-col m-auto items-center justify-center  md:h-3/4 ">
       <div className="flex flex-col gap-16 md:gap-10  my-auto">
         <div className="md:mb-16">
           <p className=" text-center md:text-left text-3xl m-0 text-slate-700">
