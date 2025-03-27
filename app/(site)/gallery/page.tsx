@@ -18,6 +18,7 @@ export default async function Gallery() {
                 name={imageCard.name}
                 text={imageCard.text}
                 price={imageCard.price}
+                id={imageCard._id}
               />
             )}
           </div>

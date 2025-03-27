@@ -11,7 +11,7 @@ export default function Header() {
   const handleMouseLeave = () => setIsHovering(false);
 
   return (
-    <div className="md:pr-10 justify-between hidden md:h-28 md:flex items-center">
+    <div className=" md:pr-10 justify-between hidden md:h-28 md:flex items-center">
       <Link
         href="/"
         onMouseEnter={handleMouseEnter}

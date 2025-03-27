@@ -8,6 +8,7 @@ interface Props {
   image: string;
   text: string;
   price: string;
+  id: string;
 }
 
 export default async function ImageCard({
@@ -16,6 +17,7 @@ export default async function ImageCard({
   name,
   text,
   price,
+  id,
 }: Props) {
   return (
     <div className="">
@@ -27,6 +29,7 @@ export default async function ImageCard({
             width={500}
             height={1200}
             className="object-cover aspect-[1/1.414]"
+            id={id}
           />
         </div>
         <div className=" flex flex-col gap-4 leading-tight w-full md:items-start items-center md:text-left text-center dark:text-slate-100">

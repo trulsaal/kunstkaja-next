@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Header from "../../Components/GalleryComponents/Header";
 import Sidebar from "../../Components/GalleryComponents/SideBar";
+import MobileHeader from "@/app/Components/MobileHeader";
 
 interface Props {
   children: React.ReactNode;
@@ -8,14 +11,15 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <div className=" px-10 flex flex-col">
-        <div className="flex">
+      <div className="dark:bg-gray-800">
+        <div className="md:py-0 mb-28 md:mb-0 flex flex-col">
           <Header />
+          <MobileHeader />
         </div>
-        <div className="flex flex-row">
+        <div className=" md:ml-10 md:mr-64 flex md:flex-row">
           <Sidebar />
-          <div className="flex justify-center w-full">
-            <div className="">{children}</div>
+          <div className=" flex justify-center md:w-full">
+            <div>{children}</div>
           </div>
         </div>
       </div>

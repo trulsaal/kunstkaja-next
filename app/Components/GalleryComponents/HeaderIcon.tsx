@@ -4,7 +4,7 @@ export default function HeaderIcon({
   className = "translate-x-1 ease-out transition-all duration-500",
 }) {
   return (
-    <div className="flex flex-col justify-center text-4xl  w-10">
+    <div className="flex flex-col justify-center text-4xl w-fit">
       <CgArrowLeft className={className} />
     </div>
   );
