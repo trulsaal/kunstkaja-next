@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <div className="">
       <Image
-        className="object-fill "
+        className="md:object-fill object-cover -z-10"
         src="/kunstkajaBg.jpg"
         alt="kunstkaja background image"
         quality="100"
