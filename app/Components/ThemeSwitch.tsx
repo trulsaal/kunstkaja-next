@@ -26,7 +26,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "dark") {
     return (
       <FiSun
-        className="cursor-pointer hover:opacity-50 text-3xl font-light"
+        className="cursor-pointer hover:opacity-50 text-3xl  font-light"
         onClick={() => setTheme("system")}
       />
     );

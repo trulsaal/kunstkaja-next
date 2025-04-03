@@ -12,16 +12,19 @@ export default function MobileHeader() {
   }
 
   return (
-    <div className="md:hidden dark:bg-slate-700 fixed top-0 h-20 w-full align-middle bg-white">
+    <div className="md:hidden dark:bg-slate-800 fixed top-0 h-20 w-full align-middle bg-white">
       <div className="z-10 flex p-4 items-center justify-between">
         <Link href="/">
-          <h1 className="text-4xl">
+          <h1 className="text-4xl text-slate-700 dark:text-slate-100">
             <strong>kunst</strong>Kaja
           </h1>
         </Link>
 
         <div>
-          <FiMenu onClick={handleClick} className="text-4xl cursor-pointer" />
+          <FiMenu
+            onClick={handleClick}
+            className="text-4xl text-slate-700 dark:text-slate-100 cursor-pointer"
+          />
         </div>
       </div>
 

@@ -32,7 +32,7 @@ export default async function ImageCard({
             id={id}
           />
         </div>
-        <div className=" flex flex-col gap-4 leading-tight w-full md:items-start items-center md:text-left text-center dark:text-slate-100">
+        <div className=" flex flex-col gap-4 leading-tight w-full md:items-start items-center md:text-left text-center dark:text-slate-100 light:text-slate-700">
           <div className="gap-2 flex flex-col">
             <span className="font-medium leading-none md:text-lg text-normal">
               {name}
